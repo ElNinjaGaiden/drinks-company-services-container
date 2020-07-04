@@ -1,9 +1,9 @@
-import awilix, { asClass } from 'awilix';
+import { createContainer, asClass, InjectionMode } from 'awilix';
 import { DrinksDataRepository } from 'drinks-company-data-repositories';
 import { DrinksBusinessService } from 'drinks-company-business-services';
 
-const container = awilix.createContainer({
-	injectionMode: awilix.InjectionMode.PROXY,
+const container = createContainer({
+	injectionMode: InjectionMode.PROXY,
 });
 
 container.register({

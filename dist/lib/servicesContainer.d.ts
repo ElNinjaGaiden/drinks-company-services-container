@@ -1,3 +1,2 @@
-import awilix from 'awilix';
-declare const container: awilix.AwilixContainer<any>;
+declare const container: import("awilix").AwilixContainer<any>;
 export default container;
